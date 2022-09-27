@@ -97,10 +97,8 @@ document.addEventListener("click", fullImg);
 function fullImg(e) {
     if (e.target.closest(".info__image")) {
         fullImage.classList.add("_fullscreen");
-        document.body.classList.add("_lock");
     }
-    if (!e.target.closest(".info__image img")) {
-        document.body.classList.remove("_lock");
+    if (!e.target.closest(".info__image")) {
         fullImage.classList.remove("_fullscreen");
     }
 }
